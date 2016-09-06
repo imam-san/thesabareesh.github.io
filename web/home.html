@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://www.sabareesh.me/">--><base href="."><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;} b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style></head>
+
+
+
+<!-- Title -->
+<title>Sabareesh Parvathareddy | Application Developer</title>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script>
+
+var colors_win=["#A200FF", "#FF0097", "#00ABA9", "#8CBF26","#A05000", "#E671B8", "#F09609", "#1BA1E2", "#E51400", "#339933"];
+
+var colors_material=["#D50000","#C51162","#AA00FF","#6200EA","#304FFE","#2962FF","#0091EA","#00B8D4",
+"#00BFA5","#00C853","#64DD17","#AEEA00","#FFD600","#212121"];
+
+var timer;
+var call=false;
+
+function changeColor(selector, colors, time) {
+        /* Params:
+         * selector: string,
+         * colors: array of color strings,
+         * every: integer (in mili-seconds)
+         */
+         
+         clearInterval(timer);
+        var curCol = 0;
+            timer = setInterval(function () {
+              console.log(colors);
+                if (curCol === colors.length) curCol = 0;
+                $(selector).css("background-color", colors[curCol]);
+                curCol++;
+            }, time);
+
+         
+    }
+
+    $(window).load(function () {
+        changeColor("body",colors_win , 3000);
+    });
+
+  $(document).ready(function(){
+    $('#myonoffswitch').change(function() {
+        if($(this).is(":checked")) {
+           
+            changeColor("body",colors_material , 3000);
+        }
+        else{
+      changeColor("body",colors_win , 3000);
+        }
+    });
+  });
+
+  
+    
+
+</script>
+<style type="text/css">
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: #eee;
+}
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+-webkit-transition: background-color 2s ease-in-out;
+    -moz-transition: background-color 2s ease-in-out;
+    -o-transition: background-color 2s ease-in-out;
+    -khtml-transition: background-color 2s ease-in-out;
+    transition: background-color 2s ease-in-out;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+
+.switchDiv{
+   position:fixed;
+}
+.onoffswitch {
+
+   position:fixed;
+    bottom:5px;
+    right:5px; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Material";
+    padding-right: 25px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Metro";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+</style>
+
+
+
+<div class="container text-center" id="error">
+
+  <div>
+    <img src="assets/img/logo.png" style="height:100px;width:100px;">
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
+      <h1>Future home of someone quite cool.</h1>
+      
+      <p class="lead">check back soon. </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+
+<div class="switchDiv">
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+</div>
+
+</body></html>
