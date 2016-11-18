@@ -830,6 +830,7 @@ Table of Contents:
 
 	/* Post Item */
 
+	#posts{display: none!important; }
 	.post { margin-bottom: 30px; }
 
 	.post .post-content {
@@ -2201,7 +2202,7 @@ Table of Contents:
 	@media only screen and (max-width: 1480px) {
 
 		.container-wide { width: 90%; }
-		.contact-box { margin-left: 5%; }
+		.contact-box { margin-left: 5%;}
 		.row.padding-lg { margin-left: -20px; margin-right: -20px; }
 		.row.padding-lg > div[class^='col'], .row.no-padding > div[class*=' col'] { padding-left: 20px; padding-right: 20px; }
 
