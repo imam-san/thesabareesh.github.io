@@ -536,17 +536,17 @@ Table of Contents:
 
 	.header-horizontal #header {
 		position: fixed;
-		top: 0;
+		top: -14px;
 		left: 0;
 		right: 0;
-		height: 88px;
+		height: 70px;
 		z-index: 222;
 		-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 	}
 
-	.header-horizontal #header > * { line-height: 88px; }
+	.header-horizontal #header > * { line-height: 85px; }
 	.header-horizontal #header > * > * { line-height: 1.6; }
 
 	/* Photo */
@@ -554,7 +554,7 @@ Table of Contents:
 	.header-horizontal #header .photo img { height: 100%; }
 
 	/* Logo */
-	.header-horizontal .logo {display: inline-block; text-align: right; padding: 9px 30px; min-width: 230px; height: 88px; line-height: 1 !important; }
+	.header-horizontal .logo {display: inline-block; text-align: right; padding: 9px 30px; min-width: 230px; height: 70px; line-height: 1 !important; }
 	.header-horizontal .logo > * { position: relative; top: 11px; }
 	.header-horizontal .logo .name { margin-bottom: 0px; font-size: 24px; line-height: 24px !important; }
 	.header-horizontal .logo .caption { font-weight: 600; font-size: 12px;  }
