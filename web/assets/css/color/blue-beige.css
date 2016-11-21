@@ -14,7 +14,7 @@ Author:			Suelo
 a:hover, a:focus, 
 .text-primary, 
 .icon-white,
-#messenger-toggle,
+/*#messenger-toggle,*/
 .btn-primary:hover, .btn-primary:focus,
 .icon-primary.icon-hover:hover, .icon-primary.icon-hover:focus {
 	color: #3aa8db; 

@@ -352,6 +352,7 @@ var Mi = {
                 $formAlert = $(this).find('.form-alert');
                 $formError = $(this).find('.form-error');
                 var response;
+            
                 $formAlert.hide().html();
                 if ($contactForm.valid()){
                     $.ajax({
@@ -371,6 +372,7 @@ var Mi = {
                      });
                     return false;
                 }
+                
                 return false;
             });
 

@@ -1,6 +1,5 @@
 /* -----------------------------------------------------------------------------
 
-Mi. - Ultimate Personal Resume vCard Template
 
 File:			CSS Theme Base
 Version:        1.3
@@ -554,7 +553,7 @@ Table of Contents:
 	.header-horizontal #header .photo img { height: 100%; }
 
 	/* Logo */
-	.header-horizontal .logo {display: inline-block; text-align: right; padding: 9px 30px; min-width: 230px; height: 70px; line-height: 1 !important; }
+	.header-horizontal .logo {display: inline-block; text-align: left; padding: 9px 30px; min-width: 360px; height: 70px; line-height: 1 !important; }
 	.header-horizontal .logo > * { position: relative; top: 11px; }
 	.header-horizontal .logo .name { margin-bottom: 0px; font-size: 24px; line-height: 24px !important; }
 	.header-horizontal .logo .caption { font-weight: 600; font-size: 12px;  }
@@ -944,7 +943,7 @@ Table of Contents:
 		position: fixed;
 		bottom: 30px;
 		right: 30px;
-		background-color: #fff;
+		background-color: #3aa8db;
 		/*-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);*/
@@ -2314,3 +2313,24 @@ Table of Contents:
 
 		#messenger.active #messenger-box:before { height: 250vh; }
 	}
+
+
+/*-----------------
+/* ---7. Scrollbar
+/*----------------------*/
+
+  	body::-webkit-scrollbar {
+    	width: 0.5em;
+    	/*display: none; */
+	}
+ 
+	body::-webkit-scrollbar-track {
+    	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
+ 
+	body::-webkit-scrollbar-thumb {
+  		background-color: darkgrey;
+  		outline: 1px solid slategrey;
+	} 
+
+	
