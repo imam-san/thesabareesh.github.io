@@ -31,6 +31,7 @@
 
 <body class="header-horizontal">
 
+
 <!-- Loader -->
 <div id="page-loader" class="bg-white"></div>
 <!-- Loader / End -->
@@ -336,7 +337,7 @@
     
     <!-- Section - Portfolio -->
     <section id="portfolio" class="section bg-grey padding-v-60">
-
+        <div class="overlay"></div>
         <!-- Content -->
         <div class="container container-wide">
 
@@ -366,8 +367,9 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                     <a href="https://github.com/thesabareesh/popular-movies" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary icon-portfolio "><i class="fa fa-link"></i></a>
-                                    <a href="" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="popMovies" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play" id="popMovies" ></i></a>
                                 </div>
+
                             </div>
                         </div>
                         <div class="item-title">
@@ -384,7 +386,7 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                     <a href="https://github.com/thesabareesh/stock-hawk" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    <a href="http://www.suelo.pl" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="stockHawk" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -402,7 +404,7 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                     <a href="https://github.com/thesabareesh/sleek-read" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    <a href="http://www.suelo.pl" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="sleekRead" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -420,7 +422,7 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                    <a href="https://github.com/thesabareesh/sunsine-advanced" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    <a href="http://www.suelo.pl" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="sunshine" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +440,7 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                     <a href="https://github.com/thesabareesh/xyz-reader" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    <a href="http://www.suelo.pl" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="xyzReader" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +459,7 @@
                             <div class="item-hover bg-dark dark">
                                 <div class="item-hover-content">
                                     <a href="https://github.com/thesabareesh/snip-n-share" target="_blank" class="icon icon-sm icon-hover icon-circle icon-primary"><i class="fa fa-link"></i></a>
-                                    <a href="http://www.suelo.pl" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
+                                    <a id="snipNShare" target="_blank" class="icon icon-sm icon-circle icon-white icon-hover"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -482,8 +484,8 @@
 
             <h6 class="margin-b-50">Testimonials</h6>
 
-            <h1 class="margin-b-0"><strong>4</strong> years of experence - <strong>over 1k</strong> happy clients!</h1>
-            <h5 class="text-muted margin-b-60">Look at their opinions!</h5>
+            <h1 class="margin-b-0"><strong>3</strong> years of experience  !</h1>
+            <h5 class="text-muted margin-b-60">%desc_opinions!</h5>
             
             <div class="row padding-lg">
                 
@@ -760,6 +762,11 @@
 <div id="ajax-modal"></div>
 <div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
 
+<!-- Marvel modal-->
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+</div>
+
 <!-- FB Like -->
 <!-- <div id="fb-root"></div> -->
 <!-- 
@@ -785,7 +792,8 @@ window.paceOptions = {
 <script src="assets/js/plugins.js"></script>
 
 <!-- JS Core -->
-<script src="assets/js/core.min.js"></script>
+<script src="assets/js/core.js"></script>
+
 
 <!-- Google Map API -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwLXqb1spmd189Hmq4ms_FYdjJ7kF8Ntw"></script>

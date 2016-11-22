@@ -531,8 +531,42 @@ var Mi = {
     }
 };
 
+function setDefaultCursor(){
+         $('body').css( 'cursor', 'default' );
+}
+
+function setProgressCursor(){
+    $('body').css( 'cursor', 'wait' );
+}
+
+
 $(document).ready(function (){
 
     Mi.init();
+    /*--- 
+    ----Marvel code start---
+    */
+    
+    var marvelHeight="600";
+    var marvelWidth="290";
+    var popMoviesEmbed='<iframe src="https://marvelapp.com/e48dh2?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
 
+
+    $('#popMovies .fa-play').click(function(){
+        setProgressCursor();
+        $('#myModal').empty();
+        $(popMoviesEmbed).appendTo('#myModal');
+        $('#myModal').modal({show:true});
+       
+    });
+
+    /* blur on modal open, unblur on close */
+    $('#myModal').on('show.bs.modal', function () {
+        $('body').children().not($('#myModal')).addClass("blur");
+    });
+
+    $('#myModal').on('hide.bs.modal', function () {
+       $('body').children().not($('#myModal')).removeClass("blur");
+    });
 });
+

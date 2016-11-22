@@ -88,10 +88,10 @@ a {
 <div id="page-loader" class="bg-white" style="display:none"></div>
 <!-- Loader / End -->
 <div class="container text-center" id="error">
-  <div class="animated" data-animation="flip" data-animation-delay="300">
+  <div class="animated" data-animation="flip" data-animation-delay="200">
   <svg height="100" width="100">
-    <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#3aa8db;stroke-width:8" />
-    <text x="42" y="74" fill="#3aa8db" font-family="sans-serif" font-weight="900" font-size="42px">!</text>
+    <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#3aa8db;stroke-width:6" />
+    <text x="42" y="74" fill="#3aa8db" font-family="sans-serif" font-weight="600" font-size="42px">!</text>
   </svg>
 </div>
  <div class="row">
@@ -102,7 +102,7 @@ a {
   </div>
   <div class="row">
     <div class="col-md-6 col-md-push-3">
-      <p class="lead">You can try again sometime or <a href="http://sabareesh.me"> return to the homepage.</a></p>
+      <p class="lead"><a href="http://sabareesh.me"> return to the homepage.</a></p>
     </div>
   </div>
 </div>

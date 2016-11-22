@@ -1538,7 +1538,7 @@ Table of Contents:
 
 	.icon.icon-hover:not(.icon-circle):hover { color: inherit; }
 	.icon-circle.icon-hover:hover:not(.icon-white):not(#messenger-toggle), .icon-circle.icon-hover:focus:not(.icon-white):not(#messenger-toggle), a.icon-circle:hover:not(.icon-white):not(#messenger-toggle), a.icon-circle:focus:not(.icon-white):not(#messenger-toggle) { background-color: #fff !important; }
-	.icon.icon-hover.icon-white:hover, .icon.icon-hover.icon-white:focus { background-color: transparent; color: inherit; }
+	.icon.icon-hover.icon-white:hover, .icon.icon-hover.icon-white:focus { background-color: transparent; cursor: pointer; color: inherit; }
 
 	/* Social Icons */
 
@@ -2334,3 +2334,16 @@ Table of Contents:
 	} 
 
 	
+
+/*----------
+/*------8. Marvel-------
+/*--------------------*/
+.modal-dialog {min-width:200px!important; z-index: 999;}
+.modal:before{height:0%!important;}
+.blur {
+	 filter: blur(3px);
+    box-shadow: 0px 0px 20px 20px rgba(255,255,255,1);
+    text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+    transform: scale(0.9);
+    opacity: 0.6;
+}
