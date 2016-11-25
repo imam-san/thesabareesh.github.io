@@ -551,7 +551,8 @@ $(document).ready(function (){
     var marvelWidth="290";
     var popMoviesEmbed='<iframe src="https://marvelapp.com/25ib2bi?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
     var stockHawkEmbed='<iframe src="https://marvelapp.com/13005g7?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
-    var sunshineEmbed='<iframe src="https://marvelapp.com/316e327?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
+    var xyzEmbed='<iframe src="https://marvelapp.com/1ghg399?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
+
 
 
     $('#popMovies').click(function(){
@@ -559,6 +560,7 @@ $(document).ready(function (){
         $('#myModal').empty();
         $(popMoviesEmbed).appendTo('#myModal');
         $('#myModal').modal({show:true});
+        
        
     });
 
@@ -574,6 +576,14 @@ $(document).ready(function (){
         setProgressCursor();
         $('#myModal').empty();
         $(sunshineEmbed).appendTo('#myModal');
+        $('#myModal').modal({show:true});
+       
+    }); 
+
+    $('#xyzReader').click(function(){
+        setProgressCursor();
+        $('#myModal').empty();
+        $(xyzEmbed).appendTo('#myModal');
         $('#myModal').modal({show:true});
        
     });
