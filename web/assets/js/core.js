@@ -552,8 +552,17 @@ $(document).ready(function (){
     var popMoviesEmbed='<iframe src="https://marvelapp.com/25ib2bi?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
     var stockHawkEmbed='<iframe src="https://marvelapp.com/13005g7?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
     var xyzEmbed='<iframe src="https://marvelapp.com/1ghg399?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
+    var hercRentalEmbed='<iframe src="https://marvelapp.com/3278d5h?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
 
-
+    
+    $('#hercRentals').click(function(){
+        setProgressCursor();
+        $('#myModal').empty();
+        $(hercRentalEmbed).appendTo('#myModal');
+        $('#myModal').modal({show:true});
+        
+       
+    });
 
     $('#popMovies').click(function(){
         setProgressCursor();
