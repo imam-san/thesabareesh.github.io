@@ -4,7 +4,7 @@
 File:			CSS Theme Base
 Version:        1.3
 Last change:    20/07/16
-Author:			Suelo
+
 
 Table of Contents:
 
@@ -829,7 +829,7 @@ Table of Contents:
 
 	/* Post Item */
 
-	#posts{display: none!important; }
+	#posts{/*display: none!important;*/ }
 	.post { margin-bottom: 30px; }
 
 	.post .post-content {
@@ -1744,6 +1744,8 @@ Table of Contents:
 
 	/* Testimonials
 	-------------------------------------------- */
+    
+	#testimonials{display: none!important; }
 
 	.testimonial {
 		margin-bottom: 45px;
