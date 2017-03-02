@@ -348,8 +348,13 @@ var Mi = {
                 }
             });
         
-            /*$contactForm.submit(function() {
-                $formAlert = $(this).find('.form-alert');
+            $contactForm.submit(function() {
+                
+                response = '<div class="alert alert-success">Done! Thank for your message - You will get you an answer as fast as possible!';
+                 $formAlert.html(response);
+                            $formAlert.show();
+                
+               /* $formAlert = $(this).find('.form-alert');
                 $formError = $(this).find('.form-error');
                 var response;
             
@@ -375,8 +380,8 @@ var Mi = {
                     return false;
                 }
                 
-                return false;
-            });*/
+                return false;*/
+            });
 
         }
     },
