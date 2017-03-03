@@ -3,7 +3,7 @@
 
 File:			CSS Theme Base
 Version:        1.3
-Last change:    20/07/16
+Last change:    03/03/17
 
 
 Table of Contents:
@@ -900,7 +900,7 @@ Table of Contents:
 	}
 
 	#messenger-box .messenger-box-content {
-		position: absolute; 
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: -30px;
@@ -918,7 +918,7 @@ Table of Contents:
 	}
 
 	#messenger-box:before { 
-		position: absolute;
+		position: fixed;
 		bottom: 30px;
 		right: 30px;
 		width: 56px;
