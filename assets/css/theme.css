@@ -900,7 +900,7 @@ Table of Contents:
 	}
 
 	#messenger-box .messenger-box-content {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		right: -30px;
@@ -918,7 +918,7 @@ Table of Contents:
 	}
 
 	#messenger-box:before { 
-		position: fixed;
+		position: absolute;
 		bottom: 30px;
 		right: 30px;
 		width: 56px;
