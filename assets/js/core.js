@@ -310,6 +310,7 @@ var Mi = {
             // Contact Form
 
             var $contactForm  = $('#contact-form');
+            
     
             $contactForm.validate({
                 errorElement: 'span',
@@ -347,7 +348,8 @@ var Mi = {
             });
         
             $contactForm.submit(function() {
-                setProgressCursor
+                setProgressCursor();
+                $('.btn').css( 'cursor', 'wait' );
                 $formAlert = $(this).find('.form-alert');
                 $formError = $(this).find('.form-error');
                 
@@ -356,8 +358,7 @@ var Mi = {
                 response = '<div class="alert alert-success">Done!  Thank you for the message - I will respond as fast as possible!';
                 
                 $formAlert.hide().html();
-                if ($contactForm.valid()){
-                    
+                if ($contactForm.valid()){  
                     event.preventDefault();
                     $.ajax({
                      url: "https://www.enformed.io/ll1xdsax",
@@ -369,11 +370,17 @@ var Mi = {
                         response = '<div class="alert alert-success">Done! Thank you for the message - I will respond as fast as possible!';
                             $formAlert.html(response);
                             $formAlert.show();
+                             setDefaultCursor();
+                            $('.btn').css( 'cursor', 'pointer' );
+                             $contactForm[0].reset();
                         },
                         error: function(){
                         response = '<div class="alert alert-danger">Oops... There seems to be a problem.';
                             $formAlert.html(response);
                             $formAlert.show();
+                             setDefaultCursor();
+                            $('.btn').css( 'cursor', 'pointer' );
+                             
                         }
                      });
                 }
