@@ -1,11 +1,9 @@
 /* -----------------------------------------------------------------------------
 
-Mi. - Ultimate Personal Resume vCard Template
-
 File:           JS Core
 Version:        1.3
-Last change:    20/07/16 
-Author:         Suelo
+Last change:    03/03/17 
+Author:         Sabareesh
 
 -------------------------------------------------------------------------------- */
 
@@ -349,10 +347,36 @@ var Mi = {
             });
         
             $contactForm.submit(function() {
+                setProgressCursor
+                $formAlert = $(this).find('.form-alert');
+                $formError = $(this).find('.form-error');
                 
-                response = '<div class="alert alert-success">Done! Thank for your message - You will get you an answer as fast as possible!';
-                 $formAlert.html(response);
+                var response;
+                
+                response = '<div class="alert alert-success">Done!  Thank you for the message - I will respond as fast as possible!';
+                
+                $formAlert.hide().html();
+                if ($contactForm.valid()){
+                    
+                    event.preventDefault();
+                    $.ajax({
+                     url: "https://www.enformed.io/ll1xdsax",
+                        method: "post",
+                        dataType: "json",
+                        accepts: "application/json",
+                        data: $("#contact-form").serialize(),
+                        success: function(){
+                        response = '<div class="alert alert-success">Done! Thank you for the message - I will respond as fast as possible!';
+                            $formAlert.html(response);
                             $formAlert.show();
+                        },
+                        error: function(){
+                        response = '<div class="alert alert-danger">Oops... There seems to be a problem.';
+                            $formAlert.html(response);
+                            $formAlert.show();
+                        }
+                     });
+                }
                 
                /* $formAlert = $(this).find('.form-alert');
                 $formError = $(this).find('.form-error');
@@ -561,7 +585,10 @@ $(document).ready(function (){
     var xyzEmbed='<iframe src="https://marvelapp.com/1ghg399?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
     var hercRentalEmbed='<iframe src="https://marvelapp.com/3278d5h?emb=1" width='+marvelWidth+' height='+marvelHeight+' allowTransparency="true" onload="setDefaultCursor();" frameborder="0"></iframe>';
 
-    
+    $("#home_avatar").click(function (){
+        $(document).scrollTop();
+    });
+        
     $('#hercRentals').click(function(){
         setProgressCursor();
         $('#myModal').empty();
