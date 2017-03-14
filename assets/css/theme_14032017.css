@@ -152,10 +152,11 @@ Table of Contents:
 	.margin-b-10 { margin-bottom: 10px !important; }
 	.margin-b-15 { margin-bottom: 15px !important; }
 	.margin-b-20 { margin-bottom: 20px !important; }
-	.margin-b-30 { 
-        margin-bottom: 30px !important; 
-        background-color: white;
+	.margin-b-30 { margin-bottom: 30px !important; }
+    .margin-avatar{
+    	background-color: white;
         padding: 2px;
+        margin-bottom: 30px !important;
     }
 	.margin-b-40 { margin-bottom: 40px !important; }
 	.margin-b-50 { margin-bottom: 50px !important; }
